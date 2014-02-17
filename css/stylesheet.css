@@ -1,0 +1,56 @@
+
+body {
+
+	padding-top: 20px;
+	background-image: url('../img/stardust.png') !important;
+	background-repeat: repeat-all !important;
+
+}
+p {
+font-family:Verdana;
+}
+h1 {
+font-family:Impact;
+}
+li {
+font-family:Verdana, Times;
+color:black;
+}
+.jumbotron {
+background-color:#CCD9FF;
+background: rgba(255, 255, 255, 0.3);
+z-index:1;
+}
+.navbar {
+border:none;
+background: rgba(255, 255, 255, 0.3);
+}
+.nav .active a {
+background-color:black !important;
+background: rgba(255, 255, 255, 0.15) !important;
+}
+a{
+color:black !important;
+}
+#gaming
+{
+font-family: inherit;
+ color: red;
+}
+#fishing
+{
+
+  color: blue;
+  font-family: inherit;
+}
+#skiing
+{
+  font-family: inherit;
+    color: white;
+}
+#music
+{
+  font-family: inherit;
+    color: black;
+}
+

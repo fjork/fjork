@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Erik Holmqvist webz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet" type="css/text">
+    <!--[För torben med IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		    -->
+  </head>
+  <body>
+    <div class="container">
+
+      <!--Navbar -->
+      <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+           <button id="button1" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+	  <a class="navbar-brand" href="index.html">Erik Holmqvist</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="future.html">Future plans</a></li>
+            <li class="active"><a href="interests.html">Interests</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Jumbotron! -->
+       <div class="jumbotron">
+        <h1>My interest!</h1>
+	
+	<ul>  
+	  <li id="gaming">
+	   [<a href="http://sites.duke.edu/lit80s_02_f2013_augrealities/files/2013/12/gaymers.jpg" target="_blank">GAMING</a>]
+	  <button class="button1" type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Check out some gaming stuffs...">
+	    Gaming?!
+	  </button>
+	  </li>
+	  
+	  <li id="fishing">
+	    [<a href="http://www.anglersmail.co.uk/wp-content/uploads/2010/10/JeremyWade.jpg" target="_blank">FISHING</a>]
+	   <button class="button1" type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Check out some fishing stuffs...">
+	    Fishing!?
+	  </button>
+	  </li>
+	  <li id="skiing">
+	    [<a href="http://images8.alphacoders.com/472/472686.jpg" target="_blank">SKIING</a>]
+	 <button class="button1" type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Check out some skiing stuffs...">
+	    Skiing!?
+	  </button>
+	  </li>
+	  <li id="music">
+	    [<a href="http://evidencebasedliving.human.cornell.edu/files/2013/07/music_notes-1z5rh82.jpg" target="_blank">MUSIC</a>]
+	  <button class="button1" type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Check out some music stuffs...">
+	    Music!?
+	  </button>
+	  </li> 
+	</ul>
+	<!-- Lekte runt lite med video.
+		<video title="Battlefield 4" width="320" height="240" controls>
+		<source src="vid/kort.mp4" type="video/mp4">
+	-->
+	 </div>
+    </div> 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap core JavaScript  -->
+    <!-- Javascript -->
+    <script>  
+      $(function ()  
+      { $(".button1").popover();  
+      });  
+    </script>  
+  </body>
+</html>
