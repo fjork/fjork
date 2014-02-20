@@ -12,6 +12,9 @@
 				    -->
   </head>
   <body>
+    
+    
+    
     <div class="container">
 
       <!--Navbar-->
@@ -38,6 +41,43 @@
 	<div class="jumbotron">
 	  <h1>Welcome!</h1>
 	  <p>This is a responsive webpage. GL & HF</p>
+	  <canvas id="myCanvas"></canvas>
+	
+	<div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
+	<div class="carousel-inner">
+	<div class="item active"><!-- class of active since it's the first item -->
+	  <img src="http://placehold.it/1200x480" alt="" />
+	<div class="carousel-caption">
+	  <p>1</p>
+	</div>
+	</div>
+	<div class="item">
+	  <img src="http://placehold.it/1200x480" alt="" />
+	<div class="carousel-caption">
+	  <p>2</p>
+	</div>
+	</div>
+	<div class="item">
+	  <img src="http://placehold.it/1200x480" alt="" />
+	<div class="carousel-caption">
+	  <p>3</p>
+	</div>
+	</div>
+	<div class="item">
+	  <img src="http://placehold.it/1200x480" alt="" />
+	<div class="carousel-caption">
+        <p>4</p>
+      </div>
+    </div>
+  </div><!-- /.carousel-inner -->
+  <!--  Next and Previous controls below
+        href values must reference the id for this carousel -->
+    <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+</div><!-- /.carousel -->
+</div>
+	
+	
 	</div>
       </div>
     
@@ -45,12 +85,55 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script>  
-      $(function ()  
-      { $("#button1").popover();  
-      });  
-    </script>  
     <!-- Bootstrap core JavaScript
+   
     ================================================== -->
+    <script>
+    $(document).ready(function() { 
+    var canvas = $("#myCanvas");
+    var context = canvas.get(0).getContext("2d");
+ 
+    // The Face
+    context.strokeStyle = '#black';
+    context.fillStyle = '#FFFFFF';
+    context.lineWidth = 4;
+    context.beginPath();
+    context.arc(100,75,50,0*Math.PI,2*Math.PI,true);
+    context.closePath();
+    context.stroke();
+    context.fill();
+ 
+    // The Smile
+    context.strokeStyle = '#black';
+    context.lineWidth = 2;
+    context.beginPath();
+    context.arc(100,65,40,0.2*Math.PI,0.8*Math.PI,false);
+    //context.closePath(); 
+    context.stroke();
+    //context.fill();
+ 
+    // The Left eye
+    context.strokeStyle = '#000000';
+    context.fillStyle = '#000000';
+    context.beginPath();
+    context.arc(80,60,10,0*Math.PI,2*Math.PI,false);
+    context.closePath();
+    context.stroke();
+    context.fill();
+ 
+    // The Right Eye
+    context.strokeStyle = '#000000';
+    context.fillStyle = '#000000';
+    context.beginPath();
+    context.arc(120,60,10,0*Math.PI,2*Math.PI,false);
+    context.closePath();
+    context.stroke();
+    context.fill();    
+    });
+ 
+    $('.carousel').carousel({
+      interval: 2000
+    });
+    </script> 
   </body>
 </html>
